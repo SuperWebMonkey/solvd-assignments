@@ -1,27 +1,27 @@
 public class SelectionSort {
 	public static void main(String[] args) {
 		// System.out.println("Hello " + args[0]);
-		int[] ary;
-		ary = new int[]{3,2,1,5,4};
+		int[] array;
+		array = new int[]{3,2,1,5,4};
 		
-		for (int i = 0; i < ary.length; i++){
+		for (int i = 0; i < array.length; i++){
 			int min = i;
 				
-			for (int j = i; j < ary.length; j++){
-				if(ary[min] > ary[j]){
+			for (int j = i; j < array.length; j++){
+				if(array[min] > array[j]){
 					min = j;
 				}
 			}
 			
-			if (min < ary[i]) {
-				int temp = ary[i];
-				ary[i] = ary[min];
-				ary[min] = temp;
+			if (min < array[i]) {
+				int temp = array[i];
+				array[i] = array[min];
+				array[min] = temp;
 			}
 		}
 		
-		for (int i = 0; i < ary.length; i++) {
-			System.out.print(ary[i] + " ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " ");
 		}
 	}
 }
